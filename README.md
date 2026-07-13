@@ -6,19 +6,6 @@ An end-to-end exploratory data analysis of customer churn — from raw, messy mu
 
 This project pulls customer, subscription, and support data out of a SQLite database, cleans and merges it into a single analysis-ready table, engineers churn-related features, and explores the drivers of churn through summary statistics, Matplotlib/Seaborn visualizations, and pivot tables.
 
-## Project Structure
-
-```
-Churn-Analysis/
-├── Churn_Analysis.ipynb          # Main analysis notebook
-├── data/
-│   ├── customer_churn.db         # Raw SQLite database (customer, subscription, support tables)
-│   ├── customer_churn_data_raw.xlsx  # Raw data (Excel source)
-│   └── Churn_data.csv            # Cleaned, merged dataset produced by the notebook
-├── requirements.txt
-└── README.md
-```
-
 ## Data
 
 The raw data lives in `customer_churn.db`, a SQLite database with three tables:
@@ -43,24 +30,6 @@ The raw data lives in `customer_churn.db`, a SQLite database with three tables:
    - Seaborn: correlation heatmap, pairplot, and categorical plots of charges by plan/gender/churn risk.
 6. **Pivot tables** — churn rate by plan type, and a multi-metric pivot (monthly charges, unique customers, churn rate) by plan type.
 
-## Getting Started
-
-### Prerequisites
-- Python 3.9+
-- Jupyter Notebook or JupyterLab
-
-### Installation
-```bash
-git clone <your-repo-url>
-cd Churn-Analysis
-pip install -r requirements.txt
-```
-
-### Run
-```bash
-jupyter notebook Churn_Analysis.ipynb
-```
-
 ## Key Metrics Produced
 - Overall churn rate & retention rate
 - Churn rate by plan type, subscription type, and state
@@ -72,4 +41,4 @@ jupyter notebook Churn_Analysis.ipynb
 
 ## License
 
-Add a license of your choice (e.g., MIT) here.
+MIT
